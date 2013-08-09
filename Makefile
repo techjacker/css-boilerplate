@@ -31,7 +31,7 @@ server: build-quick
 ######################################
 # Build
 ######################################
-build: clean components npm-install-dev $(BUILD_COMPILED_CSS)
+build: clean components npm-install-dev $(BUILD_COMPILED_CSS_MIN)
 build-quick: clean-build $(BUILD_COMPILED_CSS_MIN)
 
 $(BUILD_COMPILED_CSS_MIN): $(BUILD_COMPILED_CSS)

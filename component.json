@@ -1,6 +1,6 @@
 {
   "name": "css-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fixes to various browser quirks (mostly ie). Not meant to be a replacement for a css reset.",
   "repo": "techjacker/css-boilerplate",
   "remotes": [],
