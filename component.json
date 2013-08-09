@@ -1,0 +1,11 @@
+{
+  "name": "css-boilerplate",
+  "version": "",
+  "description": "Fixes to various browser quirks (mostly ie). Not meant to be a replacement for a css reset.",
+  "repo": "techjacker/css-boilerplate",
+  "remotes": [],
+  "dependencies": {},
+  "styles": [
+    "css/styles.css"
+  ]
+}
