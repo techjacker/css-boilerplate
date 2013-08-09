@@ -7,6 +7,7 @@ MOCHA_MD_DOCS = README_css-boilerplate.md
 ## Build
 BUILD_DIR = build
 BUILD_COMPILED_CSS = $(BUILD_DIR)/$(MOD_NAME).css
+BUILD_COMPILED_CSS_MIN = $(BUILD_COMPILED_CSS:.css=.min.css)
 
 ## install
 COMPONENTJS_CMD = @component build --out $(@D) --name $(basename $(@F))
@@ -31,7 +32,10 @@ server: build-quick
 # Build
 ######################################
 build: clean components npm-install-dev $(BUILD_COMPILED_CSS)
-build-quick: clean-build $(BUILD_COMPILED_CSS)
+build-quick: clean-build $(BUILD_COMPILED_CSS_MIN)
+
+$(BUILD_COMPILED_CSS_MIN): $(BUILD_COMPILED_CSS)
+	@yuicompressor $< -o $@
 
 $(BUILD_COMPILED_CSS):
 	$(COMPONENTJS_CMD) $(MOD_NAME)
