@@ -5,12 +5,8 @@ module.exports = function(grunt) {
 	//////////////////
 	var docsTmplDir = 'docs-tmpl',
 		filesDocsTmpl = docsTmplDir + '/**/*.tmpl',
-		filesTest = ['test/**/*.test.js'],
-		filesLib = ['lib/**/*.js'],
 		filesCSS = ['css/**/*.css'],
-		filesTmpl = ['tmpl/**/*.tmpl'],
-		filesTestLib = filesTest.concat(filesLib, filesCSS, filesTmpl),
-		filesWatch = filesTestLib.concat(['test/index.html', 'Gruntfile.js', filesCSS]),
+		filesWatch = filesCSS.concat(['test/index.html', 'Gruntfile.js'], filesDocsTmpl),
 		tasksBuild = ['readme'],
 		tasksWatch = ['component-build'],
 		processReadmeHeaderSrc          = docsTmplDir + '/README_header.md.tmpl',
