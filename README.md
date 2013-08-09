@@ -6,7 +6,7 @@ Fixes to various browser quirks (mostly ie). Not meant to be a replacement for a
 ### Install
 
 ```Shell
-component install css-boilerplate
+component install techjacker/css-boilerplate
 ```
 
 ## License
