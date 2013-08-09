@@ -3,61 +3,11 @@
 Fixes to various browser quirks (mostly ie). Not meant to be a replacement for a css reset.
 
 
-[![Build Status](https://secure.travis-ci.org/techjacker/css-boilerplate.png)](http://travis-ci.org/techjacker/css-boilerplate)
-
-[![Sauce Labs Browser Test Status](https://saucelabs.com/buildstatus/css-boilerplate)](https://saucelabs.com/u/css-boilerplate)
-[![Sauce Labs Browser Test Status](https://saucelabs.com/browser-matrix/css-boilerplate.svg)](https://saucelabs.com/u/css-boilerplate)
-
-
 ### Install
-
-#### Node
-
-```Shell
-npm install css-boilerplate
-```
-
-#### Browser
 
 ```Shell
 component install css-boilerplate
 ```
-
-
-## Usage
-
-#### css-boilerplate.mixinInstanceProps(class, [classes])
-
-```JavaScript
-var myStaticClass = {};
-
-/* .mixinInstanceProps() */
-mitsubishi.mixinInstanceProps(myStaticClass, [{hello:true}, {world:true}]);
-
-console.log('myStaticClass', myStaticClass);
-// outputs: {{hello:true, world:true}
-```
-
-#### css-boilerplate.mixinProtoProps(class, [classes])
-
-```JavaScript
-var myDynamicClass = function () {};
-var parentDynamicClass = function () {};
-
-parentDynamicClass.prototype.awesome = blah;
-
-mitsubishi.mixinProtoProps(myDynamicClass, [(new parentDynamicClass), {world:true}]);
-
-console.log('myDynamicClass', myDynamicClass);
-// outputs: {{awesome:"blah", world:true}
-```
-
-
-### Docs
-[Yuidocs documentation here](docs/index.html)
-- fire up the connect server ```$ grunt docs```
-- navigate your browser to the [docs](http://localhost:9001)
-
 
 ## License
 Copyright (c) 2013 Andrew Griffiths <mail@andrewgriffithsonline.com>
