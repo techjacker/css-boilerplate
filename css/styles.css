@@ -52,7 +52,7 @@ input[type="checkbox"] {vertical-align: bottom;}
 
 select, input, textarea {font: 99% sans-serif;}
 
-table {font-size: inherit; font: 100%;}
+table {font-size: inherit; font-size: 100%;}
 /* tables still need cellspacing="0" in the markup */
 table {border-collapse: collapse; border-spacing: 0;}
 th {font-weight: bold; vertical-align: bottom;}
