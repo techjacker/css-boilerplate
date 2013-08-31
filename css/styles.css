@@ -1,6 +1,6 @@
 /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
 
-article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+article, aside, figure, footer, header, nav, section, details, summary, main {display: block;}
 
 /* Responsive images and other embedded objects
    Note: keeping IMG here will cause problems if you're using foreground images as sprites.
@@ -36,7 +36,7 @@ button, input, select, textarea {margin: 0;}
 
 /* make buttons play nice in IE */
 button {width: auto; overflow: visible;}
- 
+
 /* scale images in IE7 more attractively */
 .ie7 img {-ms-interpolation-mode: bicubic;}
 
